@@ -21,16 +21,24 @@ class _PrincipalState extends State<Principal> {
 backgroundColor: blanco,
       body: getBody(),
       bottomNavigationBar: getfooter(),
+
+      floatingActionButton: FloatingActionButton(
+    onPressed: () {
+    },
+    child: Icon(Icons.add),
+  ),
+  floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
+  
 Widget getBody()
 {
   return IndexedStack(
     index: paginaIndex,
     children: [
-      recipes(),
+      Cocina(),
       plans(),
-      groceries(),
+      Comida(),
       account()],
   );
 }
@@ -90,5 +98,6 @@ Widget getfooter()
     ),
   );
 }
+
 
 }

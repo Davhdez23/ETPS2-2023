@@ -29,10 +29,13 @@ class _accountState extends State<account> {
           //imgen interna
          _imagen(),
      
-        Text("David Ernesto Hernandez Gallardo 25-1642-2019"),
-        Text(""),
-        Text("Jonathan Dagoberto Orellana Medrano 25-3904-2019"), // caja de texto o label
-       
+        Text("David Ernesto Hernandez Gallardo "),
+        Text("25-1642-2019"),
+         SizedBox(
+          height: 10,
+          ), 
+        Text("Jonathan Dagoberto Orellana Medrano"), // caja de texto o label
+        Text("25-3904-2019")
         ],
          ),
      );

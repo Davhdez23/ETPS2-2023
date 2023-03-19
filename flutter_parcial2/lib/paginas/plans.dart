@@ -43,9 +43,6 @@ class _plansState extends State<plans>
           height: 10,
         ),
         _nombreinput()
-
-
-       
       ],
     );
   }
