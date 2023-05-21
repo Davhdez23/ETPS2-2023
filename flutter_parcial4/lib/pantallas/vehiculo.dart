@@ -33,27 +33,7 @@ class _RegistrationFormState extends State<RegistrationForm> {
 
     super.dispose();
   }
-/*
-  void _submitForm() {
-    if (_formKey.currentState.validate()) {
-      // Aquí puedes agregar la lógica para enviar los datos de registro al servidor
-      // o realizar cualquier otra acción necesaria.
-      String name = _nameController.text;
-      String email = _emailController.text;
-      String password = _passwordController.text;
 
-      // Imprimir los datos de registro en la consola
-      print('Name: $name');
-      print('Email: $email');
-      print('Password: $password');
-
-      // Reiniciar los campos del formulario
-      _nameController.clear();
-      _emailController.clear();
-      _passwordController.clear();
-    }
-  }
-*/
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -70,7 +50,8 @@ class _RegistrationFormState extends State<RegistrationForm> {
               SizedBox(
               height: 10,
               ),
-              Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvzAYiEvQGConZEQvSdkyKj6WHYZtCzvE3vA&usqp=CAU",width: 300,height: 300,),
+              Image.network("https://th.bing.com/th/id/OIP.5iFBPyVZKdzO6FAje-jVbQHaER?pid=ImgDet&rs=1",width: 300,height: 300,),
+
               TextFormField(
                 controller: _marcaController,
                 decoration: InputDecoration(labelText: 'Marca'),                
